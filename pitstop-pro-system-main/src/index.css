@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Garage Management System Design System - Automotive Professional Theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core Background & Text */
+    --background: 210 25% 98%;
+    --foreground: 220 15% 20%;
+
+    /* Card Components */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    /* Popover Components */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    /* Primary - Deep Automotive Blue */
+    --primary: 220 50% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 220 60% 40%;
+
+    /* Secondary - Professional Gray */
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 220 15% 20%;
+
+    /* Muted - Subtle Gray Tones */
+    --muted: 215 15% 96%;
+    --muted-foreground: 220 10% 50%;
+
+    /* Accent - Automotive Orange */
+    --accent: 25 85% 55%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 25 100% 65%;
+
+    /* Destructive - Safety Red */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders & Inputs */
+    --border: 215 20% 90%;
+    --input: 215 20% 94%;
+    --ring: 220 50% 25%;
+
+    /* Status Colors */
+    --success: 145 60% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 45 90% 55%;
+    --warning-foreground: 220 15% 20%;
+    --info: 200 80% 50%;
+    --info-foreground: 0 0% 98%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px hsl(var(--primary) / 0.1);
+    --shadow-md: 0 4px 12px hsl(var(--primary) / 0.15);
+    --shadow-lg: 0 8px 25px hsl(var(--primary) / 0.2);
+    --shadow-accent: 0 4px 20px hsl(var(--accent) / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Core Background & Text */
+    --background: 220 25% 8%;
+    --foreground: 210 15% 95%;
+
+    /* Card Components */
+    --card: 220 20% 12%;
+    --card-foreground: 210 15% 95%;
+
+    /* Popover Components */
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 15% 95%;
+
+    /* Primary - Bright Blue for Dark */
+    --primary: 220 60% 65%;
+    --primary-foreground: 220 25% 8%;
+    --primary-glow: 220 80% 75%;
+
+    /* Secondary - Dark Professional Gray */
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 15% 95%;
+
+    /* Muted - Dark Gray Tones */
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 65%;
+
+    /* Accent - Bright Orange for Dark */
+    --accent: 25 85% 60%;
+    --accent-foreground: 220 25% 8%;
+    --accent-glow: 25 100% 70%;
+
+    /* Destructive - Bright Red for Dark */
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 220 25% 8%;
+
+    /* Borders & Inputs */
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 220 60% 65%;
+
+    /* Status Colors - Dark Mode */
+    --success: 145 60% 55%;
+    --success-foreground: 220 25% 8%;
+    --warning: 45 90% 65%;
+    --warning-foreground: 220 25% 8%;
+    --info: 200 80% 60%;
+    --info-foreground: 220 25% 8%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
